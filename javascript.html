@@ -5,39 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100days of codes</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="form.js"></script>
 </head>
 <body>
-    <script>
-        // my javascript
-        alert ("my first javascript!")
-        alert (23 + 97)
-        // console.log(1+2+3+4+5+6)
+   <div id="error"></div>
+    <div class="form">
+        <form action="javascript.html" method="get" id="form">
+           
+           <div>
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name"> <br> <br>
+           </div>
+           <div>
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password" ><br> <br>
+           </div>
+           <div>
+            <button type="submit">submit</button>
+           </div>
+           
+        </form>
+    </div>
+
+    <fieldset>
+        <label for="weather"> <h2>Select the weather type today:</h2> </label>
+        <select id="weather">
+          <option value=""><h6>-- Make a choice --</h6></option>
+          <option value="sunny">Sunny</option>
+          <option value="rainy">Rainy</option>
+          <option value="snowing">Snowing</option>
+          <option value="overcast">Overcast</option>
+        </select>
+        
+<h4> let do this guys! </h4>
+<h5></h5>
+</fieldset>
+<fieldset>
+   <legend>make your food choice </legend> 
+    <label for="Food"> <h2>Select your menu today:</h2> </label>
+    <Select id="Food">
+      <option value=""><h6>--     --</h6></option>
+      <option value="rice">rice</option>
+      <option value="potatoes">potatoes</option>
+      <option value="vegetables">vegetables</option>
+      <option value="fruits">fruits</option>
+    </Select>
     
-        let a=10
-        alert (a)
+<h4> let do this guys! </h4>
+<h3></h3>
+</fieldset>
 
-        let nbr= 2;
-        nbr ++;
-        alert (nbr);
-
-        let nbr1= 6;
-        nbr1 ++;
-        alert (nbr1);
-
-        let counter = 0;
-            counter++;
-            ++counter;
-            alert( counter );
-
-            let counter1 = 1;
-            alert( --counter1 );
-
-            let inc= 2;
-            alert (3 * ++inc);
-
-            let haha = 1;
-            alert( 2 * haha );
-            haha ++;
-    </script>
 </body>
-</html>
+</html
