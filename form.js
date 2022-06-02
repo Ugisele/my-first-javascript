@@ -56,30 +56,40 @@ function setWeather() {
 //end of else if;
 
 // this is a switch statement
-const Select1= document.querySelector('Select');
-const para1= document.querySelector('h3');
+const Select1= document.querySelector('#Food');
+const para1= document.querySelector('#res');
 
-Select1 .addEventListener('change', setFood);
+Select1.addEventListener('change', setFood);
 function setFood() {
-    const menu= Select1.value
-
+    let menu= Select1.value
+    console.log(menu,'menu')
  switch (menu) {
    
     case 'rice' :
         para1.textContent='i like rice!';
-         break;
+        console.log('here1');
+         
+        break;
     case 'potatoes':
         para1.textContent='they are hard to eat!';
+        console.log('here2');
+        
         break;
     case 'vegetables':
         para1.textContent='for giving you body a healthly life!';
+        console.log('her3e');
+        
         break;
     case 'fruits':
         para1.textContent='i love them moreeee!';
+        console.log('here4');
+        
         break;
 
      default:
          para1.textContent='i am in fasting today i am sorry';
+        console.log('here default');
+         
          break;
  }  
 }

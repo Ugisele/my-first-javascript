@@ -58,13 +58,90 @@
 
     //functionssss
     function sumFunction(a,b) {
-        console.log(a+b);
+        console.log(3+4);
         
     }
-    sumFunction(7+3);
+    sumFunction();
 
-    function timesFive
+//global\local\ block scope of variables
+    const myGlobal = 10;
 
+function fun1() {
+ 
+   oopsGlobal = 5;
+
+}
+
+function fun2() {
+  var output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
+//another example on local and global
+const outerWear = 'jeans';
+function myOutFit() {
+    const outerWear= "t-shirt";
+}
+return myOutFit();
+
+// underfined var under function
+const sum =0;
+function addOne(nbr) {
+
+    sum =sum + 5;
+}
+function addTwo(nbr1){
+    sum = sum + 2;
+}
+addOne ();
+addTwo();
+
+// this work well/we use map to mutliply the items in the array
+const arrr = [1,2,3];
+// const doubled = arrr .map(item => item * 2);
+// console.log(doubled);
+
+//
+function times(items) {
+    return items * 3;
+    
+}
+// another multiply
+function mult(multi,...args){
+    return args.map(y => multi * y);
+}
+const arr = mult (3,4,5);
+console.log(arr);
+
+// arrow function
+let a =[
+    't',
+    'y',
+    'u',
+    'i'
+];
+let a2 = a.map(function(s)
+{
+    return s.length;
+});
+console.log(a2);
+// /////////////////////////
+function person(){
+     var self= this;
+     self.age =1;
+    setInterval(function growUp() {
+        self.age ++;
+        
+    }, 10);
+     var p = new person();
+
+}
    </script>
 </body>
 </html>
