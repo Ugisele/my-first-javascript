@@ -18,7 +18,7 @@
 
     <script>
         const input =document.querySelector('.nbr');
-        const p = document.querySelector('h2');
+        const para = document.querySelector('h2');
 
 
     function squared(num) {
@@ -51,6 +51,33 @@ input.addEventListener('change' ,()=>{
     para.textContent +=`${num} factorial is ${factorial(num)}. `;
 }
 })
+
+// goft play
+
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+
+if (strokes == 1) {
+    return names[0];
+  } else if (strokes <= par - 2) {
+    return names[1];
+  } else if (strokes === par - 1) {
+    return names[2];
+  } else if (strokes === par) {
+    return names[3];
+  } else if (strokes === par + 1) {
+    return names[4];
+  } else if (strokes === par + 2) {
+    return names[5];
+  } else {
+    return names[6];
+  }
+  return "Change Me";
+ 
+}
+
+golfScore(5, 4);
     </script>
 </body>
 </html>
